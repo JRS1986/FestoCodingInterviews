@@ -66,11 +66,12 @@ def main():
         states_dict[i] = all_possible_states[i]
 
     # Text files to use
+    # Best: RLvsRL_state_values_player_O_trained_200k_0_3
     # 1_RLvsRL_state_values_player_O_trained_10k_0_4
     # 2_RLvsRL_state_values_player_O_trained_100k_0_4
     # 3_RLvsRL_state_values_player_O_trained_10k_0_2
 
-    state_value = np.loadtxt("1_RLvsRL_state_values_player_O_trained_10k_0_4.txt", dtype=np.float64)
+    state_value = np.loadtxt("RLvsRL_state_values_player_O_trained_200k_0_3.txt", dtype=np.float64)
     current_player = np.random.choice([PLAYER_X, PLAYER_O])
     # current_player = 1
     game = TTTGame(turn=current_player)

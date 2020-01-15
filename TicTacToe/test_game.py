@@ -52,12 +52,12 @@ if __name__ == "__main__":
     for i in range(n_states):
         states_dict[i] = all_possible_states[i]
 
-    state_value = np.loadtxt("1_RLvsRL_state_values_player_O_trained_10k_0_4.txt", dtype=np.float64)
-    # Files:
-    # RLvsRL_state_values_player_X_trained
-    # trained_state_values_X
-    # state_values_player_X_trained.txt
-    # bkp_trained_state_values_O.txt
+    state_value = np.loadtxt("RLvsRL_state_values_player_O_trained_200k_0_3.txt", dtype=np.float64)
+    # Text files to use
+    # Best: RLvsRL_state_values_player_O_trained_200k_0_3
+    # 1_RLvsRL_state_values_player_O_trained_10k_0_4
+    # 2_RLvsRL_state_values_player_O_trained_100k_0_4
+    # 3_RLvsRL_state_values_player_O_trained_10k_0_2
 
     current_player = np.random.choice([PLAYER_X, PLAYER_O])
     game = TTTGame(turn=current_player)
