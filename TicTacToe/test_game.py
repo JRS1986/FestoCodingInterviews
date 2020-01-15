@@ -77,7 +77,7 @@ if __name__ == "__main__":
         # User's turn
         else:
             user_pos = tuple(input("Enter position (comma separated): "))
-            game.play_move(PLAYER_X, int(user_pos[0]), int(user_pos[2]))
+            game.play_move(PLAYER_X, int(user_pos[0]), int(user_pos[1]))
 
         print(game.board)
         result = game.check_terminal_state()
